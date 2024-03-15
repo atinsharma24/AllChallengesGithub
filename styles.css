@@ -79,12 +79,15 @@ footer {
   margin: 10px;
   background-color: white;
 }
-
-.diceLink{
-  color: #DBEDF3;
-  text-decoration: none;
+.diceLink a{
+  color: #7cef7d;
+  /* text-decoration: none; */
 }
 
-.diceLink:visited{
-  color: aqua;
+.diceLink a:visited{
+  text-decoration: none;;
+}
+
+.diceLink a:hover{
+  color: #0bd5d2;
 }
