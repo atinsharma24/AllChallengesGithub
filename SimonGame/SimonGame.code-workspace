@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Dicee+Challenge+-+Starting+Files"
+		},
+		{
+			"path": "../DrumKitPrj"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SimonGame"
+	}
+}
