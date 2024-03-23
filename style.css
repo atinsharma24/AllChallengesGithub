@@ -1,5 +1,8 @@
 body{
     background-color: #323133;
+    background-image: url("abstract-digital-grid-black-background_53876-97647.avif");
+    height: 100vh;
+    background-size: cover;
 }
 
 .list h1{
