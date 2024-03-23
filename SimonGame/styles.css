@@ -50,3 +50,11 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+footer{
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1px cyan solid;
+  text-align: center;
+  font-size: 25px;
+}

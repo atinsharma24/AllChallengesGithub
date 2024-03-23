@@ -19,6 +19,14 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+footer{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px cyan solid;
+    text-align: center;
+    font-size: 25px;
+}
+
 .list a:hover{
     text-decoration: underline;
 }
