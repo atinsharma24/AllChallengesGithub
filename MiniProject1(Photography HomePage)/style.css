@@ -4,6 +4,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+h1{
+    color: rgb(38, 144, 144);
+}
+
 .main_box{
     background: url("photo.jpg");
     height: 100vh;
