@@ -1,54 +1,77 @@
 
-userClickedPattern = [];
-
-$("btn").on("click", function(){
-    userChosenColour = "#" + this.id;
-    console.log("event id is: " + this.id);
-});
-
-function nextSequence(){
-    let randomNumber = Math.floor(Math.random()*4);
-    return randomNumber;
-}
-
-let buttomColours = ["red", "blue", "green", "yellow"];
-let randomChosenColour = buttomColours[nextSequence()];
+let userClickedPattern = [];
 
 let gamePattern = [];
-gamePattern.push(randomChosenColour);
 
-console.log(randomChosenColour);
+let buttonColours = ["red", "blue", "green", "yellow"];
 
+let started = false;
 
+let level = 0;
 
+function playSound(name){
 
-
-$("#"+randomChosenColour).fadeOut(200).fadeIn(200);
-
-switch (randomChosenColour) {
-    case "blue":
-        let blue = new Audio("sounds/blue.mp3")
-        blue.play();
-        break;    
-
-    case "green":
-        let green = new Audio("sounds/green.mp3")
-        green.play();
-        break;
-
-    case "red":
-        let red = new Audio("sounds/red.mp3")
-        red.play();
-        break;
-
-    case "yellow":
-        let yellow = new Audio("sounds/yellow.mp3")
-        yellow.play();
-        break;
-
-    default:
-        let wrong = new Audio("sounds/wrong.mp3")
-        wrong.play();
-        break;
-
+    let audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
 }
+
+$(document).keypress(function(){
+
+    if(!started){
+        $("#level-title").text("Level" + level);
+        nextSequence();
+        started = true;
+    }
+});
+
+function nextSequence() {
+
+    level++;
+
+    $("#level-title").text("Level " + level);
+
+    let randomNumber = Math.floor(Math.random()*4);
+    
+    
+    let randomChosenColour = buttonColours[randomNumber];
+
+    // console.log(randomChosenColour);
+
+    gamePattern.push(randomChosenColour);
+
+    $(`.${randomChosenColour}`).fadeIn(100).fadeOut(100).fadeIn(100);
+
+    playSound(randomChosenColour);
+}
+
+$('.btn').click(function(){
+        
+    let userChosenColour = $(this).attr("id");
+    userClickedPattern.push(userChosenColour);
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
+});
+
+function animatePress(currentColour){
+
+    let jq = $("#" + currentColour);
+    jq.addClass("pressed");
+
+    setTimeout(function () {
+        jq.removeClass("pressed");
+    }, 100);
+}
+
+function checkAnswer(currentLevel){
+    
+}
+
+// let color = "yellow";
+
+// $("#" + color).addClass("pressed");
+
+// setTimeout(function(){
+//     $("#" + color).removeClass("pressed");
+// }, 100);
+
+// console.log(userClickedPattern);
