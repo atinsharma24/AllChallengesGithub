@@ -1,6 +1,10 @@
 body {
   text-align: center;
   background-color: #283149;
+  background-image: url(../compute-ea4c57a4.png);
+  height: 100vh;
+  background-size: cover;
+  font-family: PlackTheHanet;
 }
 
 h1 {
