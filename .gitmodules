@@ -1,0 +1,3 @@
+[submodule "gita_verses"]
+    path = gita_verses
+    url = https://github.com/atinsharma24/gita_verses.git
