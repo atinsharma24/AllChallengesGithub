@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    background-image: url("../image-preview/images/beautiful-landscape-from-magazine-coming-life.jpg");
+    background-color: #323133;
+    /* background-image: url("abstract-digital-grid-black-background_53876-97647.avif"); */
+    height: 100vh;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #2575fc;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}

@@ -1,0 +1,59 @@
+body {
+    font-family: "Kode Mono", monospace;
+    background-color: #323133;
+    background-image: url("Designer\ \(1\).jpeg");
+    height: 100vh;
+    background-size: cover;
+    color: beige; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black for contrast */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.list h1 {
+    font-size: 60px;
+    color: rgb(22, 246, 235);
+    text-decoration: underline;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+h3 {
+    color: cornflowerblue;
+    border: 2px solid white;
+    font-size: 30px;
+    margin-bottom: 30px; /* Added margin for spacing */
+}
+
+.list a,
+li {
+    color: beige;
+    text-decoration: none;
+    font-size: 40px;
+    display: block; /* Changed to block for better spacing */
+    margin: 15px 0; /* Added margin for spacing */
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions for effects */
+}
+
+.list a:hover {
+    color: rgb(22, 246, 235); /* Change link color on hover */
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+footer {
+    color: aliceblue;
+    border: 1px cyan solid;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px; /* Added margin for spacing */
+    opacity: 0.8; /* Slight transparency */
+}
