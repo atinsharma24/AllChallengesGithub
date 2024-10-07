@@ -1,6 +1,72 @@
 body{
     font-family: "Kode Mono", monospace;
 }
+.new-version {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px; /* Adjusts the padding for better click area */
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker for better visibility */
+    color: white;
+    border-radius: 25px; /* Adjusted for a smoother corner */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
+    transition: background-color 0.3s; /* Smooth transition effect */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.new-version p {
+    margin: 0; /* Remove default margin */
+    color: blueviolet;
+}
+
+.new-version a {
+    color: aqua; /* Color for the link text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    color: violet;
+}
+
+.new-version a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Optional: Responsive design */
+@media (max-width: 600px) {
+    .new-version {
+        width: auto; /* Let it adjust based on content */
+        font-size: 0.9em; /* Slightly smaller font on small screens */
+    }
+}
+
+
+.marquee {
+    overflow: hidden; /* Hide any overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    position: relative; /* Position relative for absolute children */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.marquee p {
+    display: inline-block; /* Make the paragraph inline */
+    animation: marquee 15s linear infinite; /* Animation properties */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to off-screen to the left */
+    }
+}
+
+
+
 .list h1{
     text-align: center;
     font-size: 60px;
@@ -28,6 +94,10 @@ h3{
 }
 
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: aliceblue;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     border: 1px cyan solid;
@@ -35,13 +105,52 @@ footer{
     font-size: 25px;
 }
 
+.footer_down p{
+    font-size: 40px;
+    text-align: center;
+    /* text-decoration: underline; */
+    color: white;
+    padding: auto;
+    margin: auto;
+    border: 2px white solid;
+}
+
+.footer_down a {
+    width: 100%;
+    
+    color: rgb(22, 246, 235);
+    text-decoration: none;
+    margin: auto;
+    padding: auto;
+    /* padding-top: 0; */
+}
+
+.footer_down a:hover {
+    text-decoration: underline;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    /* width: 100vw; */
+    /* margin: auto;
+    padding: auto;
+    text-align: auto;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+
+
 .list a:hover{
     text-decoration: underline;
 }
 
 body{
     background-color: #323133;
-    background-image: url("abstract-digital-grid-black-background_53876-97647.avif");
+    background-image: url("/image-preview/images/abstract-digital-grid-black-background_53876-97647.avif");
+    background-image: url("/image-preview/images/dark-hexagonal-background-with-gradient-color_79603-1409.avif");
     height: 100vh;
     background-size: cover;
     /* font-family: "MyFont0", sans-serif; */
