@@ -1,3 +1,6 @@
+/* Global styles */
+
+
 body {
     font-family: "Kode Mono", monospace;
     display: flex;
@@ -5,16 +8,15 @@ body {
     height: 100vh;
     margin: 0;
     background-color: black;
-    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     transition: background-image 1s ease-in-out;
 }
 
-.old-version{
+/* Old version notice */
+.old-version {
     position: fixed;
-    /* align-self: flex-end; */
     top: 5px;
     right: 5px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -26,19 +28,17 @@ body {
     box-shadow: 0 4px 10px 5px rgba(0, 0, 0, 0.7);
 }
 
-.old-version a{
+.old-version a {
     color: white;
     text-decoration: none;
 }
 
-.old-version:hover{
+.old-version:hover {
     text-decoration: underline;
 }
 
-
-
+/* Marquee styles */
 .marquee {
-    overflow: hidden;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -48,10 +48,8 @@ body {
     color: white;
     font-size: 20px;
     padding: 10px 0;
-    justify-content: flex-start;
-    align-items: center;
     width: 100%;
-    height: auto;
+    border-radius: 10px;
 }
 
 .marquee p {
@@ -69,49 +67,28 @@ body {
     }
 }
 
-
+/* Controls section */
 .controls {
-    position: relative;
-    margin: 5px;
-    height: 100px;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     display: flex;
     flex-direction: column;
-    /* gap: 20px; */
     max-width: 1200px;
-    justify-content: space-between;
+    justify-content: center;
     margin: 20px 0;
     z-index: 4;
 }
 
-.controls {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack marquee and buttons vertically */
-    width: 100%; /* Make controls full width */
-    max-width: 1200px; /* Maximum width */
-    margin-top: 20px; /* Top and bottom margin */
-    margin-bottom: 0px;
-    justify-content: center;
-}
-
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    /* background-color: rgba(0, 0, 0, 0.4); */
     padding: 10px 0;
-    padding-top: 0px;
-    margin-top: 0px;
 }
 
 .buttons button {
     font-family: "Kode Mono", monospace;
     font-size: smaller;
-    /* flex: -1; */
     background-color: rgba(8, 8, 8, 0.5);
     margin: 0 5px;
-    /* justify-content: center; */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -119,62 +96,45 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     width: 30%;
-    
 }
 
 .buttons button:hover {
-    
     background-color: rgba(22, 246, 235, 0.7);
-
 }
 
+/* Image preview */
 #imagePreview {
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat;  
-    width: 100vw;                  
-    height: 100vh;                 
-    display: flex;                 
-    justify-content: center;       
-    align-items: center;           
-}
-
-.image-preview {
     background-size: cover;
     background-position: center;
-    transition: background-image 1s ease-in-out;
-}
-
-#imagePreview {
-    height: 100vh;
+    background-repeat: no-repeat;
     width: 100vw;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-
+/* Horizontal rule */
 hr {
     border: none;
     height: 2.5px;
     background-color: orange;
 }
 
+/* Top footer styles */
 .top-footer {
-    position: relative;
     color: aliceblue;
     margin: 10px auto;
-    margin-bottom: 0px;
     padding: 10px;
     max-width: 1200px;
     border-radius: 10px;
     text-align: center;
     font-size: 25px;
-    padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
     z-index: 2;
 }
 
+/* Container styles */
 .container {
     flex: 1;
     display: flex;
@@ -182,6 +142,7 @@ hr {
     overflow: hidden;
 }
 
+/* Background image with blur effect */
 body::before {
     content: "";
     position: absolute;
@@ -189,7 +150,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("./images/Designer\ \(1\).jpeg");
+    background-image: url("./images/Designer\ (1).jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -197,6 +158,7 @@ body::before {
     z-index: 1;
 }
 
+/* List styles */
 .list {
     flex-grow: 1;
     z-index: 2;
@@ -204,7 +166,6 @@ body::before {
     text-align: center;
     max-width: 1200px;
     margin: 15px auto;
-    margin-bottom: 0px;
     padding: 10px;
     border-radius: 10px;
     overflow-y: auto;
@@ -212,6 +173,7 @@ body::before {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Custom scrollbar */
 .list::-webkit-scrollbar {
     width: 8px;
 }
@@ -234,6 +196,7 @@ body::before {
     scrollbar-color: rgba(22, 246, 235, 0.7) rgba(0, 0, 0, 0.3);
 }
 
+/* List headings */
 .list h1 {
     font-size: 40px;
     color: transparent;
@@ -244,27 +207,27 @@ body::before {
     text-align: center;
 }
 
+/* Subheadings */
 h3 {
-    color: cornflowerblue;
+    color: transparent;
     border: 2px dotted white;
     font-size: 20px;
     width: 40%;
-    margin: 0px auto;
-    color: transparent;
+    margin: 15px auto;
     background: linear-gradient(135deg, #ff6e7f, #bfe9ff);
     background-clip: text;
     -webkit-background-clip: text;
-    margin: 15px auto;
     text-align: center;
-    
 }
 
+/* List items */
 .list ol {
     padding: 0;
     list-style-position: inside;
 }
 
-.list a, li {
+.list a,
+li {
     color: beige;
     text-decoration: none;
     line-height: 50px;
@@ -276,13 +239,12 @@ h3 {
     text-decoration: underline;
 }
 
+/* Footer styles */
 .footer_down {
-    
     color: aliceblue;
     text-align: center;
     font-size: 20px;
     margin: 20px auto;
-    margin-top: 0;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
@@ -290,21 +252,17 @@ h3 {
     z-index: 3;
 }
 
-.footer_down p{
+.footer_down p {
     padding-top: 10px;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .footer_down a {
     color: rgb(22, 246, 235);
     text-decoration: none;
     margin: 0 10px;
-    margin-top: 0px;
-    padding-top: 0;
 }
 
 .footer_down a:hover {
     text-decoration: underline;
 }
-
-
