@@ -1,5 +1,7 @@
 # Atin Sharma's Project Portfolio
 
+![SomeRandomImage](./image-preview/images/Designer22.jpeg)
+
 Welcome to my master repository! This repo contains links to various projects I’ve worked on. Below is a list of repositories along with their descriptions and latest updates.
 
 ## Table of Contents
