@@ -4,3 +4,8 @@
 [submodule "CollegeBookLendingPortal"]
 	path = CollegeBookLendingPortal
 	url = https://github.com/atinsharma24/CollegeBookLendingPortal.git
+
+
+[submodule "HostelEase"]
+    path = HostelEase
+    url = https://github.com/atinsharma24/HostelEase.git   # Make sure this URL is correct
