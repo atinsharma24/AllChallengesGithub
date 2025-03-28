@@ -1,3 +1,8 @@
+[submodule "HostelEase"]
+    path = HostelEase
+    url = https://github.com/atinsharma24/HostelEase.git   # Make sure this URL is correct
+
+
 [submodule "gita_verses"]
     path = gita_verses
     url = https://github.com/atinsharma24/gita_verses.git
@@ -7,6 +12,3 @@
 	url = https://github.com/atinsharma24/CollegeBookLendingPortal.git
 
 
-[submodule "HostelEase"]
-    path = HostelEase
-    url = https://github.com/atinsharma24/HostelEase.git   # Make sure this URL is correct
